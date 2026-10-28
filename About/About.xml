@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Sweet World Generator</name>
+  <author>Sweet Briana</author>
+  <packageId>unaidedmistake.worldgenerator</packageId>
+  <modVersion>1.5</modVersion>
+  <supportedVersions>
+    <li>1.6</li>
+    <li>1.7</li>
+  </supportedVersions>
+  <description>Sweet World Generator by Sweet Briana. Plan a new colony with readable planet controls, a searchable faction-count popup, biome frequencies and dry initial arrivals. In RimWorld 1.7, Selected biomes only limits generated land to checked biomes while preserving native oceans and lakes. Optional climate adaptation reports incompatible selections without substituting another biome. Recipes include temperate, desert, optional Alpha Biomes and Anomaly-inspired surface worlds. With Anomaly, Cavern World and the Cavern Pioneers / Reclamation Expedition scenarios create persistent underground colonies: fertile lake oases, one generated passage, Flesh-preserving mining, wood-producing cavern trees, healroot, habitat fungi/crystal lights, muffalo livestock, faintly glowing violet Hair and furnished faction-held oases. Lava pools sit deeper inside broad side chambers away from original travel routes. Odyssey adds native lake fishing. Ground trading caravans are supported; orbital deliveries cannot reach the deep ceiling. Special objective maps remain native exceptions. See Cavern-Guide.txt for starts, travel and limitations. Recipes are seed/settings recipes, not prebuilt planets. Apply and Save are separate. Existing worlds are not edited. Harmony required; other providers are optional. Legacy 1.6 implementation is unchanged. Internal package and saved settings identifiers remain stable.</description>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>zylle.morevanillabiomes</li>
+    <li>EvilEyeGuy.CustomBaseFramework</li>
+  </loadAfter>
+</ModMetaData>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="PlantBaseNonEdible" MayRequire="Ludeon.RimWorld.Anomaly">
+    <defName>UGWG_CavernHair</defName><label>hair</label>
+    <description>Fine violet filaments growing from the living Flesh beneath the cavern. The strands are seventy percent narrower than ordinary cave grass and give off a faint purple glow. Hair slowly colonizes newly mined Flesh after debris is cleared, without changing its fertility. It avoids growing zones, structures, laid floors and the immediate lava margin. It is not forage.</description>
+    <thingClass>UnaidedMistake.WorldGenerator.Plant_CavernHair</thingClass>
+    <graphicData><texPath>Things/Cavern/UGWG_HairViolet</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+    <statBases><MaxHitPoints>50</MaxHitPoints><Beauty>1</Beauty><Flammability>0.4</Flammability></statBases>
+    <passability>Standable</passability><pathCost>0</pathCost>
+    <plant>
+      <fertilityMin>0</fertilityMin><fertilitySensitivity>0</fertilitySensitivity><growDays>4</growDays>
+      <growMinGlow>0</growMinGlow><growOptimalGlow>0</growOptimalGlow><cavePlant>true</cavePlant><diesToLight>false</diesToLight><dieIfNoSunlight>false</dieIfNoSunlight>
+      <maxMeshCount>9</maxMeshCount><visualSizeRange>0.4~0.65</visualSizeRange>
+    </plant>
+    <comps><li Class="CompProperties_Glower"><glowRadius>1.6</glowRadius><overlightRadius>0</overlightRadius><glowColor>(85,30,140,0)</glowColor><overrideIsCavePlant>false</overrideIsCavePlant></li></comps>
+  </ThingDef>
+  <ThingDef ParentName="TreeBase" MayRequire="Ludeon.RimWorld.Anomaly">
+    <defName>UGWG_OasisTree</defName>
+    <label>cavern oak</label>
+    <description>A broad-canopied symbiotic tree adapted to the rich cavern soil. Its roots and fungal partners sustain growth without sunlight. Mature trees yield ordinary usable wood. Cavern oaks can be sown after researching tree sowing, and seedlings slowly return to undisturbed habitat.</description>
+    <graphicData><texPath>Things/Plant/TreeOak</texPath><graphicClass>Graphic_Random</graphicClass><color>(0.72,0.9,0.78)</color></graphicData>
+    <statBases><Beauty>3</Beauty></statBases>
+    <plant>
+      <growDays>18</growDays><fertilityMin>1</fertilityMin><fertilitySensitivity>0.5</fertilitySensitivity>
+      <growMinGlow>0</growMinGlow><growOptimalGlow>0</growOptimalGlow><cavePlant>true</cavePlant><diesToLight>false</diesToLight><dieIfNoSunlight>false</dieIfNoSunlight>
+      <interferesWithRoof>false</interferesWithRoof><mustBeWildToSow>false</mustBeWildToSow><harvestYield>40</harvestYield><harvestWork>1000</harvestWork>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="PlantBaseNonEdible" MayRequire="Ludeon.RimWorld.Anomaly">
+    <defName>UGWG_OasisHerb</defName>
+    <label>cavern healroot</label>
+    <description>A cave-adapted medicinal herb. It grows without sunlight and yields ordinary herbal medicine. Skilled growers can cultivate it on fertile oasis soil.</description>
+    <graphicData><texPath>Things/Plant/Healroot</texPath><graphicClass>Graphic_Random</graphicClass></graphicData>
+    <selectable>true</selectable><neverMultiSelect>false</neverMultiSelect>
+    <statBases><MaxHitPoints>85</MaxHitPoints><Beauty>2</Beauty></statBases>
+    <plant>
+      <fertilityMin>1</fertilityMin><growDays>7</growDays><growMinGlow>0</growMinGlow><growOptimalGlow>0</growOptimalGlow>
+      <cavePlant>true</cavePlant><diesToLight>false</diesToLight><dieIfNoSunlight>false</dieIfNoSunlight>
+      <harvestYield>1</harvestYield><harvestTag>Standard</harvestTag><harvestedThingDef>MedicineHerbal</harvestedThingDef>
+      <sowTags><li>Ground</li></sowTags><sowMinSkill>8</sowMinSkill><purpose>Health</purpose><maxMeshCount>4</maxMeshCount>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="PlantBase" MayRequire="Ludeon.RimWorld.Anomaly">
+    <defName>UGWG_OasisGrass</defName>
+    <label>oasis cave grass</label>
+    <description>A resilient underground groundcover sustained by the fertile oasis habitat. It needs no sunlight and feeds grazing wildlife.</description>
+    <statBases><MaxHitPoints>85</MaxHitPoints><Nutrition>0.5</Nutrition></statBases>
+    <graphicData><texPath>Things/Plant/Grass</texPath><graphicClass>Graphic_Random</graphicClass></graphicData>
+    <plant>
+      <fertilityMin>1</fertilityMin><fertilitySensitivity>0.3</fertilitySensitivity><growDays>3</growDays>
+      <growMinGlow>0</growMinGlow><growOptimalGlow>0</growOptimalGlow><cavePlant>true</cavePlant><diesToLight>false</diesToLight>
+      <maxMeshCount>9</maxMeshCount><visualSizeRange>0.4~0.65</visualSizeRange><dieIfNoSunlight>false</dieIfNoSunlight>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="PlantBase" MayRequire="Ludeon.RimWorld.Anomaly">
+    <defName>UGWG_OasisFungus</defName>
+    <label>oasis lantern fungus</label>
+    <description>A light-tolerant edible cave fungus. Its glow marks the fertile oasis and supports nearby crops. Unlike ordinary glowstools, it survives bright habitat light. Can be sown on fertile ground.</description>
+    <statBases><MaxHitPoints>100</MaxHitPoints><Nutrition>0.5</Nutrition><Beauty>3</Beauty></statBases>
+    <graphicData><texPath>Things/Plant/Glowstool</texPath><graphicClass>Graphic_Random</graphicClass><color>(0.65,1,0.8)</color></graphicData>
+    <selectable>true</selectable><neverMultiSelect>false</neverMultiSelect><pathCost>8</pathCost>
+    <plant>
+      <fertilityMin>1</fertilityMin><fertilitySensitivity>0.3</fertilitySensitivity><growDays>8</growDays>
+      <growMinGlow>0</growMinGlow><growOptimalGlow>0</growOptimalGlow><cavePlant>true</cavePlant><diesToLight>false</diesToLight>
+      <harvestYield>10</harvestYield><harvestTag>Standard</harvestTag><harvestedThingDef>RawFungus</harvestedThingDef>
+      <sowTags><li>Ground</li></sowTags><purpose>Food</purpose><maxMeshCount>4</maxMeshCount><visualSizeRange>0.55~0.9</visualSizeRange>
+      <dieIfNoSunlight>false</dieIfNoSunlight><pollution>Any</pollution>
+    </plant>
+    <comps><li Class="CompProperties_Glower"><glowRadius>6</glowRadius><overlightRadius>3</overlightRadius><glowColor>(160,220,180,0)</glowColor><overrideIsCavePlant>false</overrideIsCavePlant></li></comps>
+  </ThingDef>
+  <ThingDef ParentName="BuildingBase" MayRequire="Ludeon.RimWorld.Anomaly">
+    <defName>UGWG_OasisCrystal</defName>
+    <label>oasis light crystal</label>
+    <description>A natural bioluminescent crystal cluster found on fertile oasis ground. It illuminates the surrounding habitat without electricity and supports nearby crops. Clearing the cluster removes its light permanently.</description>
+    <thingClass>Building</thingClass><category>Building</category><altitudeLayer>Building</altitudeLayer>
+    <graphicData><texPath>Things/Cavern/OasisCrystal</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(1.5,1.5)</drawSize></graphicData>
+    <statBases><MaxHitPoints>150</MaxHitPoints><Beauty>5</Beauty><Flammability>0</Flammability><WorkToBuild>100</WorkToBuild><Mass>15</Mass></statBases>
+    <size>(1,1)</size><passability>PassThroughOnly</passability><pathCost>20</pathCost><fillPercent>0.3</fillPercent>
+    <rotatable>false</rotatable><blockLight>false</blockLight><canOverlapZones>true</canOverlapZones>
+    <building><isEdifice>false</isEdifice></building>
+    <comps><li Class="CompProperties_Glower"><glowRadius>10</glowRadius><overlightRadius>5</overlightRadius><glowColor>(175,225,220,0)</glowColor></li></comps>
+  </ThingDef>
+</Defs>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ScenPartDef MayRequire="Ludeon.RimWorld.Anomaly">
+    <defName>UGWG_CavernStart</defName><label>cavern colony</label>
+    <scenPartClass>UnaidedMistake.WorldGenerator.ScenPart_CavernStart</scenPartClass>
+    <category>Misc</category><canBeRandomlyAdded>false</canBeRandomlyAdded><canBePlayerAddedRemoved>false</canBePlayerAddedRemoved>
+  </ScenPartDef>
+  <ScenarioDef ParentName="ScenarioBase" MayRequire="Ludeon.RimWorld.Anomaly">
+    <defName>UGWG_CavernPioneers</defName><label>Cavern Pioneers</label>
+    <description>Three pioneers reach a safe fertile lake oasis deep within a cavern world. Build under a natural deep ceiling, cultivate cave fungi or crops near habitat lights, and explore the dark passages for other oases. One passage connects each generated oasis; normal mining can open more. This is a persistent colony, not Anomaly's temporary Undercave. Requires Anomaly. Starting balance is provisional.</description>
+    <scenario><summary>Three supplied settlers begin in a safe underground lake oasis.</summary><parts>
+      <li Class="ScenPart_ConfigPage_ConfigureStartingPawns"><def>ConfigPage_ConfigureStartingPawns</def><pawnCount>3</pawnCount><pawnChoiceCount>8</pawnChoiceCount></li>
+      <li Class="UnaidedMistake.WorldGenerator.ScenPart_CavernStart"><def>UGWG_CavernStart</def></li>
+      <li Class="ScenPart_PlayerPawnsArriveMethod"><def>PlayerPawnsArriveMethod</def><method>Standing</method><visible>false</visible></li>
+      <li Class="ScenPart_StartingThing_Defined"><def>StartingThing_Defined</def><thingDef>MealSurvivalPack</thingDef><count>70</count></li>
+      <li Class="ScenPart_StartingThing_Defined"><def>StartingThing_Defined</def><thingDef>MedicineIndustrial</thingDef><count>20</count></li>
+      <li Class="ScenPart_StartingThing_Defined"><def>StartingThing_Defined</def><thingDef>Steel</thingDef><count>450</count></li>
+      <li Class="ScenPart_StartingThing_Defined"><def>StartingThing_Defined</def><thingDef>WoodLog</thingDef><count>300</count></li>
+      <li Class="ScenPart_StartingThing_Defined"><def>StartingThing_Defined</def><thingDef>ComponentIndustrial</thingDef><count>30</count></li>
+      <li Class="ScenPart_StartingThing_Defined"><def>StartingThing_Defined</def><thingDef>Gun_BoltActionRifle</thingDef><count>2</count></li>
+      <li Class="ScenPart_StartingThing_Defined"><def>StartingThing_Defined</def><thingDef>MeleeWeapon_Knife</thingDef><stuff>Steel</stuff><count>1</count></li>
+      <li Class="ScenPart_StartingThing_Defined"><def>StartingThing_Defined</def><thingDef>Silver</thingDef><count>400</count></li>
+    </parts></scenario>
+  </ScenarioDef>
+  <ScenarioDef ParentName="ScenarioBase" MayRequire="Ludeon.RimWorld.Anomaly">
+    <defName>UGWG_ReclamationExpedition</defName><label>Reclamation Expedition</label>
+    <description>Four armed explorers enter the dark cave network outside an insect-held fertile lake oasis. Clear the defenders and establish an underground colony. Supplies are finite; carry them into the habitat and prepare for later expeditions to other occupied oases. One generated passage leads into each oasis; normal mining remains possible. Requires Anomaly. Starting balance is provisional.</description>
+    <scenario><summary>Four equipped explorers reclaim an occupied underground oasis.</summary><parts>
+      <li Class="ScenPart_ConfigPage_ConfigureStartingPawns"><def>ConfigPage_ConfigureStartingPawns</def><pawnCount>4</pawnCount><pawnChoiceCount>8</pawnChoiceCount></li>
+      <li Class="UnaidedMistake.WorldGenerator.ScenPart_CavernStart"><def>UGWG_CavernStart</def><reclamation>true</reclamation></li>
+      <li Class="ScenPart_PlayerPawnsArriveMethod"><def>PlayerPawnsArriveMethod</def><method>Standing</method><visible>false</visible></li>
+      <li Class="ScenPart_StartingThing_Defined"><def>StartingThing_Defined</def><thingDef>MealSurvivalPack</thingDef><count>100</count></li>
+      <li Class="ScenPart_StartingThing_Defined"><def>StartingThing_Defined</def><thingDef>MedicineIndustrial</thingDef><count>25</count></li>
+      <li Class="ScenPart_StartingThing_Defined"><def>StartingThing_Defined</def><thingDef>Steel</thingDef><count>350</count></li>
+      <li Class="ScenPart_StartingThing_Defined"><def>StartingThing_Defined</def><thingDef>WoodLog</thingDef><count>250</count></li>
+      <li Class="ScenPart_StartingThing_Defined"><def>StartingThing_Defined</def><thingDef>ComponentIndustrial</thingDef><count>25</count></li>
+      <li Class="ScenPart_StartingThing_Defined"><def>StartingThing_Defined</def><thingDef>Silver</thingDef><count>300</count></li>
+    </parts></scenario>
+  </ScenarioDef>
+</Defs>

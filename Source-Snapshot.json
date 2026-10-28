@@ -1,0 +1,219 @@
+{
+  "name": "Sweet World Generator",
+  "packageId": "unaidedmistake.worldgenerator",
+  "repository": "rimworld-sweet-world-generator",
+  "license": "MIT",
+  "sourceUnit": "unaided-world-generator",
+  "productionSource": "unaided-world-generator/1.7/Source",
+  "sourceFilesUnmodified": true,
+  "recordedUtc": "2026-10-28T21:32:42.015Z",
+  "files": [
+    {
+      "path": "About/About.xml",
+      "bytes": 2101,
+      "sha256": "7035F731BFE0EC7758729D1DC41639ED131AAC2A3DA9B26345D2B8829F903B45",
+      "origin": "unaided-world-generator/About/About.xml"
+    },
+    {
+      "path": "About/Preview.png",
+      "bytes": 645035,
+      "sha256": "BB4190D93FC1D24F977F8D4599858A890F912013036C6755973FDA17912EBA69",
+      "origin": "unaided-world-generator/About/Preview.png"
+    },
+    {
+      "path": "1.7/Defs/AnomalySurfaceVariants.xml",
+      "bytes": 5453,
+      "sha256": "53091962819BCAF3E3B6BEE803D926F1F53672346D7AAF09803749F44D357417",
+      "origin": "unaided-world-generator/1.7/Defs/AnomalySurfaceVariants.xml"
+    },
+    {
+      "path": "1.7/Defs/CavernCBFPieces.xml",
+      "bytes": 9061,
+      "sha256": "CE75AAD6C203E5D7C1B3D754ED857A58254D2017C5E8CEAFF5D7391D5B1F1411",
+      "origin": "unaided-world-generator/1.7/Defs/CavernCBFPieces.xml"
+    },
+    {
+      "path": "1.7/Defs/CavernEcology.xml",
+      "bytes": 7474,
+      "sha256": "F9356CD32B03A807D39CD304A7AA6C04B715863ADEFDB1824486A9E98C81A450",
+      "origin": "unaided-world-generator/1.7/Defs/CavernEcology.xml"
+    },
+    {
+      "path": "1.7/Defs/CavernLava.xml",
+      "bytes": 1245,
+      "sha256": "15831776B7F85DE60B164FAD39EF9926452FF358DD6A3150E1865B75C2B48442",
+      "origin": "unaided-world-generator/1.7/Defs/CavernLava.xml"
+    },
+    {
+      "path": "1.7/Defs/CavernOases.xml",
+      "bytes": 4204,
+      "sha256": "3EFA3424FAECEB5C66A3DB20E05B02EFC62B4E31F3D0811620B08AA9796868A3",
+      "origin": "unaided-world-generator/1.7/Defs/CavernOases.xml"
+    },
+    {
+      "path": "1.7/Defs/CavernScenarios.xml",
+      "bytes": 4670,
+      "sha256": "35454F9EE92DEA8BC30329E8B86E3EDF62A36836E52803CD28A67141C6526165",
+      "origin": "unaided-world-generator/1.7/Defs/CavernScenarios.xml"
+    },
+    {
+      "path": "1.7/Defs/CavernStructures.xml",
+      "bytes": 1458,
+      "sha256": "A85D558BB0041C37FCBD3B77FC89F0EADE633C5A6D6BA39FC3B9B544EF5F7F1E",
+      "origin": "unaided-world-generator/1.7/Defs/CavernStructures.xml"
+    },
+    {
+      "path": "1.7/Textures/Things/Cavern/OasisCrystal.png",
+      "bytes": 1135950,
+      "sha256": "B5AE0FDA8FC03E4A8ABABFFE6CB09F9062782DEA4117C89B8652DD99CAD56B42",
+      "origin": "unaided-world-generator/1.7/Textures/Things/Cavern/OasisCrystal.png"
+    },
+    {
+      "path": "1.7/Textures/Things/Cavern/UGWG_HairViolet.png",
+      "bytes": 364106,
+      "sha256": "69B0FB4001A0CDC4F95BFF3636520CA5A25ED136A4A0B51D7641652D2FE0A191",
+      "origin": "unaided-world-generator/1.7/Textures/Things/Cavern/UGWG_HairViolet.png"
+    },
+    {
+      "path": "LoadFolders.xml",
+      "bytes": 140,
+      "sha256": "DEF95B605B64371BB4E5A9ED339F92D2FBF9625B95B5F9559C1808369CC549AC",
+      "origin": "unaided-world-generator/LoadFolders.xml"
+    },
+    {
+      "path": "Cavern-Guide.txt",
+      "bytes": 9093,
+      "sha256": "B5E899729D3796B75ADD633EDAE5C7D315EBFB67BCF06EDEA62711327E4C61DA",
+      "origin": "unaided-world-generator/Cavern-Guide.txt"
+    },
+    {
+      "path": "Compatibility-1.7.txt",
+      "bytes": 2456,
+      "sha256": "8FF38C29F59DA7BFD49B82BDDA27756EE3A40F381C28D39E14E55073456181AB",
+      "origin": "unaided-world-generator/Compatibility-1.7.txt"
+    },
+    {
+      "path": "README.txt",
+      "bytes": 6062,
+      "sha256": "F354734CAFD92410A8CD39496059B24E23A51DAADA817559464DE2AE2376AACC",
+      "origin": "unaided-world-generator/README.txt"
+    },
+    {
+      "path": "1.7/Source/BiomeSelection.cs",
+      "bytes": 13259,
+      "sha256": "9A2D947D1576EAC7C494AA211F3F1979DD5A76F5421F3C4FA8CC534A11AE00BF",
+      "origin": "unaided-world-generator/1.7/Source/BiomeSelection.cs"
+    },
+    {
+      "path": "1.7/Source/CavernEcology.cs",
+      "bytes": 6769,
+      "sha256": "33482B1064420BD188B304D3C6540BAA3C49BE34390BC2F644854706B23EE5C0",
+      "origin": "unaided-world-generator/1.7/Source/CavernEcology.cs"
+    },
+    {
+      "path": "1.7/Source/CavernFactions.cs",
+      "bytes": 5636,
+      "sha256": "7F720688895215EDBA6C85EC0E24AB78204A9088D0F013EF6B95EEAD81C2D3CD",
+      "origin": "unaided-world-generator/1.7/Source/CavernFactions.cs"
+    },
+    {
+      "path": "1.7/Source/CavernHair.cs",
+      "bytes": 6257,
+      "sha256": "92924D5C43FB94C218DD88D4C24FFCB07BD073B6ABCBB1BC3649EE59DEB4884C",
+      "origin": "unaided-world-generator/1.7/Source/CavernHair.cs"
+    },
+    {
+      "path": "1.7/Source/CavernInfestations.cs",
+      "bytes": 846,
+      "sha256": "2FE9B37663D1A772B602716B6012EEADB2AC3711AECC6CBC0579DE38DC5AACC9",
+      "origin": "unaided-world-generator/1.7/Source/CavernInfestations.cs"
+    },
+    {
+      "path": "1.7/Source/CavernLayout.cs",
+      "bytes": 17333,
+      "sha256": "111BDD5378D7B75353F853E0021AB3A18917D616D1A0FBC7295E815F3F5A9B1A",
+      "origin": "unaided-world-generator/1.7/Source/CavernLayout.cs"
+    },
+    {
+      "path": "1.7/Source/CavernResources.cs",
+      "bytes": 7214,
+      "sha256": "6BB9D9CC3439EC6090C5EA169B699DAE0470519B8777FBF30D1EA7DAE047CB22",
+      "origin": "unaided-world-generator/1.7/Source/CavernResources.cs"
+    },
+    {
+      "path": "1.7/Source/CavernScenarios.cs",
+      "bytes": 1853,
+      "sha256": "89B13DC5693967C9F90C8D2EB9F36AC849D7913735DE7210FD8B2525ECC54AE6",
+      "origin": "unaided-world-generator/1.7/Source/CavernScenarios.cs"
+    },
+    {
+      "path": "1.7/Source/CavernStructures.cs",
+      "bytes": 6263,
+      "sha256": "5B92F4C67D8916C5D34AEDD31BE86AA9655343E1B27C8B8180C19AAF8142C3F5",
+      "origin": "unaided-world-generator/1.7/Source/CavernStructures.cs"
+    },
+    {
+      "path": "1.7/Source/CavernWorld.cs",
+      "bytes": 6348,
+      "sha256": "E4CC67CF58DC764434DA68824643507659A15C6C05709F014AA9FDECA8E4100D",
+      "origin": "unaided-world-generator/1.7/Source/CavernWorld.cs"
+    },
+    {
+      "path": "1.7/Source/Hydrophobia.cs",
+      "bytes": 7544,
+      "sha256": "6D8D7A03AA9013E438EE2C91849A2731A951DCE89068C9CB5DB41A3C736094D0",
+      "origin": "unaided-world-generator/1.7/Source/Hydrophobia.cs"
+    },
+    {
+      "path": "1.7/Source/PresetEditor.cs",
+      "bytes": 8436,
+      "sha256": "704E12A800DD5F50D1C77BDA4F3DA671DAA9F1592CD06EBAAC289633C4F4EE78",
+      "origin": "unaided-world-generator/1.7/Source/PresetEditor.cs"
+    },
+    {
+      "path": "1.7/Source/SurfaceAnomaly.cs",
+      "bytes": 4110,
+      "sha256": "71617016AAB13EA7E5ABB6D32D33E439F9C0ECA73E3173E72B0EE764262CCB2C",
+      "origin": "unaided-world-generator/1.7/Source/SurfaceAnomaly.cs"
+    },
+    {
+      "path": "1.7/Source/UnaidedWorldGenerator.cs",
+      "bytes": 18026,
+      "sha256": "5230990F597C76F72E9672849CA8025CD21E32588E51957BF28C6CEA875F1F58",
+      "origin": "unaided-world-generator/1.7/Source/UnaidedWorldGenerator.cs"
+    },
+    {
+      "path": "1.7/Source/WorldControlsDialog.cs",
+      "bytes": 28648,
+      "sha256": "317FA4128665CACECC5FE8ECDF40DDA9C48648D057C37FC06A69FB60BF754D08",
+      "origin": "unaided-world-generator/1.7/Source/WorldControlsDialog.cs"
+    },
+    {
+      "path": "1.6/Source/UnaidedWorldGenerator.cs",
+      "bytes": 33671,
+      "sha256": "9016D972A556C30077C9B1496D8FCDE42F8B772D1EBEE3DC6BA858BE54618FE3",
+      "origin": "unaided-world-generator/1.6/Source/UnaidedWorldGenerator.cs"
+    },
+    {
+      "path": "About/PublishedFileId.txt",
+      "bytes": 10,
+      "sha256": "A699667FA2B9AB1E0EED06CDBB80778AFD2B2662445C85B723E8C183D8989502",
+      "origin": "installed metadata"
+    }
+  ],
+  "installedBinaryFingerprints": [
+    {
+      "path": "1.7/Assemblies/UnaidedWorldGenerator.dll",
+      "sha256": "E56D0C54744356D280638102E1745F62095268B8BE688AAD4070660DE7114B32"
+    }
+  ],
+  "build17": {
+    "status": "COMPILED",
+    "sourceFiles": 15,
+    "gameVersion": "1.7.4990 rev1069",
+    "productSHA256": "C8A3EEC6AB6FEACA4155607A05E8620DC174614833DB36FE42DD555D511DF9BF",
+    "diagnosticCount": 0
+  },
+  "nativePlaytest": "NOT_RUN_THIS_PASS",
+  "artworkOmitted": false
+}

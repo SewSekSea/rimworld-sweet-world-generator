@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <GenStepDef MayRequire="Ludeon.RimWorld.Anomaly">
+    <defName>UGWG_SurfaceRuins</defName>
+    <order>730</order>
+    <genStep Class="UnaidedMistake.WorldGenerator.GenStep_SurfaceAnomalyRuins" />
+  </GenStepDef>
+
+  <BiomeDef ParentName="TemperateForest" MayRequire="Ludeon.RimWorld.Anomaly">
+    <defName>UGWG_SurfaceLabyrinth</defName>
+    <label>labyrinth expanse (surface)</label>
+    <description>An open-air landscape of weathered gray courtyards, broken maze walls and temperate vegetation. This World Generator adaptation is a normal, settleable surface biome inspired by Anomaly's labyrinth. Its ruins can be removed, roads remain open and natural soil supports a colony. It has no labyrinth teleportation, forced encounters or pocket-map collapse. Frequency defaults to zero until enabled in world controls.</description>
+    <workerClass>UnaidedMistake.WorldGenerator.BiomeWorker_SurfaceAnomaly</workerClass>
+    <texture>Terrain/Surfaces/GrayFloor</texture>
+    <plantDensity>0.25</plantDensity>
+    <animalDensity>1.1</animalDensity>
+    <settlementSelectionWeight>0.4</settlementSelectionWeight>
+    <canBuildBase>true</canBuildBase>
+    <canExitMap>true</canExitMap>
+    <extraGenSteps><li>UGWG_SurfaceRuins</li></extraGenSteps>
+    <layerWhitelist><li>Surface</li></layerWhitelist>
+    <modExtensions><li Class="UnaidedMistake.WorldGenerator.SurfaceAnomalyBiome" /></modExtensions>
+    <settleWarning>Surface adaptation: gray ruins have no soil fertility. Preserve the natural soil between courtyards for crops.</settleWarning>
+  </BiomeDef>
+
+  <BiomeDef ParentName="TemperateForest" MayRequire="Ludeon.RimWorld.Anomaly">
+    <defName>UGWG_SurfaceMetalHell</defName>
+    <label>metal desolation (surface)</label>
+    <description>Dark metal courtyards and jagged ruined walls interrupt a sparse temperate landscape. This World Generator adaptation is a normal, settleable surface biome inspired by Anomaly's metal hell. Removable ruins, ordinary weather, open routes and patches of natural soil allow colony play. It does not trigger the original story sequence or generate its special-map hazards. Frequency defaults to zero until enabled in world controls.</description>
+    <workerClass>UnaidedMistake.WorldGenerator.BiomeWorker_SurfaceAnomaly</workerClass>
+    <texture>Terrain/Surfaces/Voidmetal</texture>
+    <plantDensity>0.08</plantDensity>
+    <animalDensity>0.35</animalDensity>
+    <settlementSelectionWeight>0.2</settlementSelectionWeight>
+    <canBuildBase>true</canBuildBase>
+    <canExitMap>true</canExitMap>
+    <extraGenSteps><li>UGWG_SurfaceRuins</li></extraGenSteps>
+    <layerWhitelist><li>Surface</li></layerWhitelist>
+    <modExtensions><li Class="UnaidedMistake.WorldGenerator.SurfaceAnomalyBiome"><metal>true</metal></li></modExtensions>
+    <settleWarning>Surface adaptation: metal floors cannot grow crops, and wild food is sparse. Use remaining soil and bring supplies.</settleWarning>
+  </BiomeDef>
+
+  <TerrainDef ParentName="FloorBase" MayRequire="Ludeon.RimWorld.Anomaly">
+    <defName>UGWG_GraySurface</defName>
+    <label>weathered gray surface</label>
+    <description>A solid, weathered gray surface. Unlike the labyrinth pocket-map floor, this surface adaptation supports ordinary colony structures.</description>
+    <texturePath>Terrain/Surfaces/GrayFloor</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>340</renderPrecedence>
+    <layerable>false</layerable>
+    <fertility>0</fertility>
+    <designationCategory IsNull="True" />
+    <affordances><li>Light</li><li>Medium</li><li>Heavy</li></affordances>
+  </TerrainDef>
+
+  <ThingDef ParentName="Wall" MayRequire="Ludeon.RimWorld.Anomaly">
+    <defName>UGWG_LabyrinthRuinWall</defName>
+    <label>weathered gray ruin wall</label>
+    <description>A damaged gray wall. This surface ruin can be claimed, deconstructed or destroyed; it is not an indestructible labyrinth wall.</description>
+    <graphicData><texPath>Things/Building/Linked/GrayWall_Atlas</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+    <stuffCategories IsNull="True" />
+    <costStuffCount>0</costStuffCount>
+    <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+    <designationCategory IsNull="True" />
+    <statBases><MaxHitPoints>300</MaxHitPoints><Flammability>0</Flammability></statBases>
+    <building><paintable>false</paintable><deconstructible>true</deconstructible><claimable>true</claimable><neverBuildable>true</neverBuildable></building>
+  </ThingDef>
+
+  <ThingDef ParentName="Wall" MayRequire="Ludeon.RimWorld.Anomaly">
+    <defName>UGWG_MetalRuinWall</defName>
+    <label>weathered dark-metal ruin wall</label>
+    <description>A fractured dark-metal ruin. Unlike the original void-metal wall, this surface adaptation can be claimed, deconstructed or destroyed.</description>
+    <graphicData><texPath>Things/Building/Linked/VoidmetalWall_Atlas</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+    <stuffCategories IsNull="True" />
+    <costStuffCount>0</costStuffCount>
+    <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+    <designationCategory IsNull="True" />
+    <statBases><MaxHitPoints>350</MaxHitPoints><Flammability>0</Flammability></statBases>
+    <building><paintable>false</paintable><deconstructible>true</deconstructible><claimable>true</claimable><neverBuildable>true</neverBuildable></building>
+  </ThingDef>
+</Defs>

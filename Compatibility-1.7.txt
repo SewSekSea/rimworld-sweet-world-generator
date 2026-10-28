@@ -1,0 +1,40 @@
+SWEET WORLD GENERATOR - RIMWORLD 1.7 COMPATIBILITY
+
+This release's expanded cavern features target RimWorld 1.7.4982. The separate
+1.6 folder is preserved legacy support, not the new cavern implementation.
+Harmony is required. Anomaly is required for Cavern World. Odyssey is optional
+and supplies native deep lava and lake fishing; a magma fallback is available.
+
+ReGrowth 2: native tests used installed version 5.2-rev2, package
+regrowth.botr.core, Workshop 2260097569. Five accepted native cases include
+three with Alpha Biomes also loaded. This certifies only the exercised cases.
+
+Alpha Biomes: can coexist with Cavern World while the cavern biome is retained.
+It does not automatically replace cavern tiles. Forced biome conversion or
+retrofitting existing maps is outside the tested setup. A separate Alpha-only
+Gallatross graveyard surface map with a derelict archonexus mutator logged
+three reload conflicts involving overlapping bone buildings and indestructible
+archotech structures. The identical map reproduced those errors with Sweet
+World Generator absent. That case is excluded from the accepted zero-error
+suite; it is a known uncertified Alpha surface combination. The accepted
+Alpha surface sample used Mycotic Jungle.
+
+Custom Base Framework is optional. Its bounded original layouts have native
+structure fallbacks. This mod does not include an entire city-generation mod.
+
+The accepted suite comprises 46 native cases and 1,467 assertions with zero
+game errors/protected-file changes. Additional screenshot sessions are recorded
+separately. This is not certification of every seed, modpack, faction provider,
+long-term campaign, quest or storyteller combination.
+
+Cavern starts: use the included Cavern Pioneers or Reclamation Expedition
+scenarios and 250 x 250 maps. Ground traders are supported. Orbital deliveries
+cannot reach the deep ceiling. Gravship starts, surface airships and other
+mods' sky transport are not certified. Special objective maps remain native.
+Lava is recessed away from original paths; enclosed-room heat still applies.
+
+Start a new colony for expanded generation. Existing maps keep their terrain.
+Back up saves. Removing/downgrading the mod or opening cavern saves in 1.6 is
+unsupported. Player saves are not converted. Existing attribution, licensing,
+technical identity and all legacy 1.6 files remain unchanged. Original crystal,
+Hair and promotional thumbnail artwork used the built-in image generator.

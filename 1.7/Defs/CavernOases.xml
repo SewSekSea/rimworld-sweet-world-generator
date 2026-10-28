@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <BiomeDef ParentName="Biome_Underground" MayRequire="Ludeon.RimWorld.Anomaly">
+    <defName>UGWG_CavernOasis</defName>
+    <label>flesh cavern oases</label>
+    <description>A persistent underground cave network surrounding fertile lake oases, with cave-adapted trees, food fungi, medicinal herbs and grazing animals. Mineral veins and a dry geyser support colony growth; lava pockets illuminate the outer tunnels. Human factions occupy compact furnished lodges and insect factions occupy ruins. Ordinary and deep-drill infestation incidents are disabled here while placed insects remain. Each oasis begins with one connecting passage. Natural rock can be mined to make new routes. This custom colony biome does not use Anomaly's temporary Undercave lifecycle. Frequency defaults off; choose the Cavern World recipe for a cavern-based colony.</description>
+    <workerClass>UnaidedMistake.WorldGenerator.BiomeWorker_CavernOasis</workerClass>
+    <texture>Terrain/Surfaces/Flesh</texture>
+    <generatesNaturally>true</generatesNaturally>
+    <implemented>true</implemented>
+    <canBuildBase>true</canBuildBase>
+    <canAutoChoose>true</canAutoChoose>
+    <canExitMap>true</canExitMap>
+    <allowRoads>false</allowRoads>
+    <allowRivers>false</allowRivers>
+    <constantOutdoorTemperature>15</constantOutdoorTemperature>
+    <disableSkyLighting>true</disableSkyLighting>
+    <disableShadows>true</disableShadows>
+    <noAmbientWind>true</noAmbientWind>
+    <settlementSelectionWeight>1</settlementSelectionWeight>
+    <plantDensity>0</plantDensity>
+    <allowedPackAnimals><li>Muffalo</li><li>Alpaca</li><li>Dromedary</li><li>Elephant</li></allowedPackAnimals>
+    <maxFishPopulation>300</maxFishPopulation>
+    <fishTypes MayRequire="Ludeon.RimWorld.Odyssey">
+      <freshwater_Common><Fish_Bass MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Bass></freshwater_Common>
+      <freshwater_Uncommon><Fish_Catfish MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Catfish></freshwater_Uncommon>
+    </fishTypes>
+    <layerWhitelist><li>Surface</li></layerWhitelist>
+    <modExtensions><li Class="UnaidedMistake.WorldGenerator.CavernBiome" /></modExtensions>
+    <settleWarning>Underground colony: no sunlight or surface entrance. Bring supplies. Use habitat lights and ground trading caravans; orbital deliveries cannot reach the deep ceiling.</settleWarning>
+  </BiomeDef>
+  <RoofDef MayRequire="Ludeon.RimWorld.Anomaly">
+    <defName>UGWG_CavernCeiling</defName>
+    <label>deep cavern ceiling</label>
+    <isNatural>true</isNatural>
+    <isThickRoof>true</isThickRoof>
+    <canCollapse>false</canCollapse>
+    <filthLeaving>Filth_RubbleRock</filthLeaving>
+  </RoofDef>
+  <TerrainDef ParentName="NaturalTerrainBase" MayRequire="Ludeon.RimWorld.Anomaly">
+    <defName>UGWG_OasisSoil</defName>
+    <label>fertile oasis ground</label>
+    <description>Rich, moist underground soil around a cavern lake. It supports cultivation and heavy colony structures; crops still need appropriate light or a cave-adapted growth habit.</description>
+    <texturePath>Terrain/Surfaces/SoilRich</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <categoryType>Soil</categoryType>
+    <renderPrecedence>345</renderPrecedence>
+    <fertility>1.4</fertility>
+    <pathCost>2</pathCost>
+    <affordances><li>Light</li><li>Medium</li><li>Heavy</li><li>GrowSoil</li><li>Diggable</li></affordances>
+    <tags><li>Soil</li></tags>
+  </TerrainDef>
+  <GenStepDef MayRequire="Ludeon.RimWorld.Anomaly">
+    <defName>UGWG_CavernLayout</defName>
+    <order>210</order>
+    <genStep Class="UnaidedMistake.WorldGenerator.GenStep_CavernLayout" />
+  </GenStepDef>
+  <MapGeneratorDef MayRequire="Ludeon.RimWorld.Anomaly">
+    <defName>UGWG_Cavern</defName>
+    <label>persistent cavern oases</label>
+    <isUnderground>true</isUnderground>
+    <validScenarioMap>true</validScenarioMap>
+    <roofDef>UGWG_CavernCeiling</roofDef>
+    <disableShadows>true</disableShadows>
+    <ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter>
+    <genSteps><li>ElevationFertility</li><li>UGWG_CavernLayout</li><li>FindPlayerStartSpot</li><li>ScenParts</li><li>Fog</li></genSteps>
+  </MapGeneratorDef>
+</Defs>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <UnaidedMistake.WorldGenerator.CavernStructureDef MayRequire="Ludeon.RimWorld.Anomaly">
+    <defName>UGWG_OasisLodge</defName>
+    <rows>
+      <li>WWWWDWWWW</li><li>W.......W</li><li>WB.B.B..W</li><li>W.......W</li><li>W...CT..W</li><li>W.......W</li><li>W.S....LW</li><li>W.......W</li><li>WWWWDWWWW</li>
+    </rows>
+  </UnaidedMistake.WorldGenerator.CavernStructureDef>
+  <UnaidedMistake.WorldGenerator.CavernStructureDef MayRequire="Ludeon.RimWorld.Anomaly">
+    <defName>UGWG_OasisLodgeCompact</defName>
+    <rows>
+      <li>WWWDWWW</li><li>W.....W</li><li>WB.B.BW</li><li>W.....W</li><li>WL.CT.W</li><li>W.S...W</li><li>WWWDWWW</li>
+    </rows>
+  </UnaidedMistake.WorldGenerator.CavernStructureDef>
+  <UnaidedMistake.WorldGenerator.CavernStructureDef MayRequire="Ludeon.RimWorld.Anomaly">
+    <defName>UGWG_OasisRuin</defName><ruin>true</ruin>
+    <rows>
+      <li>WWWWDWWWW</li><li>W........</li><li>W.......W</li><li>W.......W</li><li>.....T..W</li><li>W.......W</li><li>W.......W</li><li>W........</li><li>WW..DWWWW</li>
+    </rows>
+  </UnaidedMistake.WorldGenerator.CavernStructureDef>
+  <UnaidedMistake.WorldGenerator.CavernStructureDef MayRequire="Ludeon.RimWorld.Anomaly">
+    <defName>UGWG_OasisRuinCompact</defName><ruin>true</ruin>
+    <rows>
+      <li>WWDWW</li><li>W...W</li><li>..T.W</li><li>W...W</li><li>WWDWW</li>
+    </rows>
+  </UnaidedMistake.WorldGenerator.CavernStructureDef>
+</Defs>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TerrainDef ParentName="NaturalTerrainBase" MayRequire="Ludeon.RimWorld.Anomaly">
+    <defName>UGWG_CavernMagma</defName>
+    <label>cavern magma</label>
+    <description>Molten rock exposed in a deep cavern fissure. It emits heat and light and burns objects at its edge. Pawns cannot walk across it. Cavern generation keeps these pockets away from the oasis and preserves existing dry routes.</description>
+    <texturePath>Terrain/Surfaces/Sand</texturePath><color>(1,0.22,0.015)</color>
+    <edgeType>FadeRough</edgeType><categoryType>Misc</categoryType><renderPrecedence>390</renderPrecedence>
+    <fertility>0</fertility><passability>Impassable</passability><pathCost>300</pathCost><affordances Inherit="false" />
+    <avoidWander>true</avoidWander><dangerous>true</dangerous><supportsRock>false</supportsRock><holdSnowOrSand>false</holdSnowOrSand>
+    <glowRadius>3</glowRadius><glowColor>(214,94,4,0)</glowColor><heatPerTick>0.25</heatPerTick>
+    <igniteRadius>1.9</igniteRadius><burnDamage>3</burnDamage><burnIntervalTicks>120</burnIntervalTicks><ignitePawnsIntervalTicks>240</ignitePawnsIntervalTicks>
+    <extraDeteriorationFactor>600</extraDeteriorationFactor>
+  </TerrainDef>
+</Defs>

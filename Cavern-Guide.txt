@@ -1,0 +1,150 @@
+SWEET WORLD GENERATOR 1.7: CAVERN OASES
+=====================================
+
+Requires Harmony and Anomaly. Odyssey is optional and adds native fishing.
+Use a NEW colony. This mode does not convert an existing surface colony.
+
+STARTING
+Choose Cavern Pioneers or Reclamation Expedition on the scenario screen.
+Both automatically select the strict Cavern World recipe while keeping the
+other world controls available. The recipe alone is also in world controls.
+Native water tiles remain water on the travel grid. Use land for a colony.
+Use 250 by 250 colony maps for the intended cavern experience. Smaller and
+larger maps remain compatibility options, starting at 100 cells per side.
+
+Cavern Pioneers: three settlers stand inside a safe oasis, with 70 survival
+meals, 20 medicine, 450 steel, 300 wood, 30 components, two bolt-action rifles,
+a steel knife and 400 silver. Equip the supplied weapons normally.
+New peaceful player starts also receive an adult female and male muffalo.
+Build a pen and keep grazing ground available; they use native animal care.
+
+Reclamation Expedition: four explorers stand in the outer caves near an oasis
+guarded by three actual insect-faction megascarabs. Each explorer has a
+bolt-action rifle equipped. Supplies: 100 survival meals, 25 medicine,
+350 steel, 250 wood, 25 components and 300 silver. Starting balance is
+provisional, not a promise that every randomly generated team will win.
+
+THE CAVERNS
+The normal world grid is the travel abstraction. Ordinary local colony and
+faction maps on cavern tiles use persistent underground generation. There is
+no separate surface map or entrance from above. Each local map initially has
+one primary fertile lake oasis, connected through a four-cell-wide passage
+to an outer cave network reaching the map edges. Other world tiles provide
+other oases to explore. Natural walls remain mineable, including new routes
+made after generation. The deep natural ceiling cannot collapse.
+
+New cavern maps have asymmetric natural-edged chambers, uneven off-centre
+lakes and branching tunnels of varying widths, with occasional larger caves.
+The outer map boundary remains rectangular. Layout randomness is seeded and
+validated for connected routes, dry arrivals and usable farmland. Existing
+saved maps keep their original terrain and are not reshaped by this update.
+
+The mode does not use the temporary Undercave lifecycle, forced Dreadmeld,
+flesh-sack generation or mandatory spreading-flesh generators. The outer
+floor is flesh-themed terrain. This is not immunity from ordinary Anomaly
+storyteller threats. Specialized objective maps, such as the escape ship,
+remain native exceptions instead of having their objectives overwritten.
+
+HABITAT
+The oasis has rich, heavy-building-capable dry ground and a real lake.
+Cave grass needs no sunlight. Light-tolerant lantern fungi produce edible
+raw fungus and can be sown on ground with at least 100% fertility. Natural
+crystal clusters and fungi illuminate the generated grassy habitat;
+outer tunnels have dark stretches, faintly glowing violet Hair, lava pockets
+and player lights. Ordinary crops still
+need enough light, temperature and fertility. Use the bright habitat patches
+or build appropriate growing equipment. Clearing a crystal removes its light.
+
+Broad-canopied cavern oaks grow without sunlight and yield ordinary wood.
+Research Tree sowing to cultivate them. Cavern healroot also grows in darkness
+and produces herbal medicine; sowing needs Plants skill 8. Slow seedling
+regrowth respects growing zones and structures, and starts only on new maps.
+
+Fine dark-violet Hair grows over exposed Flesh in new cavern maps. Its
+strands are seventy percent narrower than ordinary cave grass and emit a
+small purple glow. Hair is groundcover, not animal forage or fertile soil.
+Mining Flesh-backed walls preserves the Flesh and deep ceiling. After loose
+mining debris is cleared, Hair can slowly colonize the new ground. Pending
+growth survives saving; floors, growing zones and structures suppress it.
+Paving or reserving an established patch clears it during a plant update.
+Legacy maps retain their earlier ecology and mining behavior.
+
+Four wild hares begin in the dry oasis. Wildlife can roam, graze, be tamed
+or hunted normally. Reclamation and faction oases contain a wild adult
+female/male muffalo pair; tame them for native livestock breeding and wool.
+Peaceful new player starts receive a domestic pair instead. Wildlife is not
+an inexhaustible spawner. Habitat regrowth does not regenerate crystals.
+With Odyssey, the lake uses native fish populations and fishing zones/jobs.
+Fish are resources caught through the fishing system, not decorative pawns.
+Without Odyssey, the lake remains usable water with no fishing dependency.
+
+Natural cavern walls use the tile's rock types and contain mineable steel,
+components and smaller valuable mineral deposits accessible from tunnels.
+A dry oasis geyser supports geothermal power. Wood supports fuel production;
+solar power cannot work under this deep ceiling. Ground trade supplements
+finite resources. Better Trees and Better Mountains remain optional visual
+providers; neither is needed for cavern tree growth or the rock/resource fill.
+
+Molten pools sit deeper inside broad side chambers, at least seven tiles
+from the original travel network. Each chamber meets that network through
+one opening on the same side, with broad dry margins around the lava. The
+chambers do not replace original routes or fertile ground. Keep animals and
+combustible materials away from their burning edges. Odyssey uses native
+deep lava; without Odyssey, cavern magma uses the same terrain heat, light,
+burning and impassable-ground mechanics with a simpler native-texture look.
+Native room-temperature rules apply: caves connected to map edges use outdoor
+temperature, while enclosed rooms can retain terrain heat from lava. Keep
+livestock and combustible supplies away from any lava enclosure.
+
+EXPLORATION AND FACTIONS
+Normal configured human factions can own cavern maps with their native pawn
+types.
+Human faction sites receive compact furnished stone lodges; insect-held
+oases have an occupied ruined structure. Layouts stay on dry habitat, clear
+of the passage, water and arrivals. Custom Base Framework can stamp the
+original bounded layouts when loaded; native generation supplies them when
+the optional framework is absent. Full city generation is not run here.
+
+Up to two insect-held oasis locations are added to a new cavern
+colony's world when the native insect faction exists. Each must be a valid
+settlement tile with a ground route from the starting colony. If the world
+has fewer suitable locations, a message reports the actual number placed;
+inaccessible markers are not substituted. Insects have real faction and
+defend-point AI. Clearing one oasis does not eliminate the universal insect
+faction. Later map loads do not rerun initialization or respawn defenders.
+
+Ordinary infestation incidents and deep-drill infestation incidents are
+disabled specifically on these cavern maps. Deliberately placed insect
+factions remain. Surface incidents and other Anomaly threats are unchanged.
+
+Form caravans and use the ordinary world-map travel/attack/settle controls.
+An explorer enters through a map-edge tunnel and can reach the oasis through
+its passage. Clear the defenders before using the native settle action.
+To establish additional colonies, increase RimWorld's normal maximum-colonies
+setting yourself. The mod does not change that preference or your mod list.
+
+TRADE AND SKY ACCESS
+Ground trading caravans are supported, including pack animals and a reachable
+gathering point. Orbital trades are deliberately unavailable in these deep
+caverns because their drop deliveries cannot reach the colony. The comms
+guard explains this instead of opening a trade payment dialog. Normal surface
+orbital trading is unchanged. Surface airships, gravship starts, orbital cargo
+and other mods' sky transport are not certified for these roofed maps. Use
+the included standing-arrival scenarios for the supported cavern starts.
+
+SAVES, LIMITATIONS AND ART
+Back up colonies before updating. Custom biome, floor, ceiling, plant,
+crystal, faction/scenario components are saved content. Removing this mod,
+downgrading, or opening these colonies in 1.6 is not supported. The legacy
+1.6 payload itself remains unchanged. No player saves are converted.
+
+Native tests exercise bounded map sizes, starts, gameplay consumers and
+save/load. They do not certify every seed, full modpack, faction provider,
+long-term colony balance or every storyteller/quest/transport combination.
+Static biome reference pictures are a separate feature, not a live preview.
+
+OasisCrystal.png and UGWG_HairViolet.png are original artwork generated for
+this project using the built-in image generator. The Hair sprite contains
+its purple colour directly. Native grass/fungus art is referenced through
+RimWorld's content loader; no official or third-party texture file was copied.
+Existing package attribution, licensing and technical identity are retained.
